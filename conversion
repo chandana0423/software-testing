@@ -1,0 +1,18 @@
+package pratice;
+import java.util.Scanner;
+import static org.junit.Assert.*;
+public class binary {
+	public static void main(String[]args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the  decimal number:");
+		int decimal=sc.nextInt();
+		String binary=Integer.toBinaryString(decimal);
+		System.out.println("the binary value is:"+binary);
+		String octal=Integer.toOctalString(decimal);
+		System.out.println("the octal value is:"+octal);
+		assertEquals("1100",binary);
+		assertEquals("14",octal);
+	}
+
+}
