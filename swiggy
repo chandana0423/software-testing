@@ -1,0 +1,14 @@
+package pratice;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class swiggy {
+	public static void main(String[]args)
+	{
+		WebDriver driver =new ChromeDriver();
+		System.setProperty("Webdriver.chrome.Driver"," C:\\chromedriver_win32.exe");
+		driver.get("https://www.swiggy.com/");	
+		driver.manage().window().maximize();
+		WebElement login=driver.findElement(By.className("sZsUd"));
+		login.click();	
+	}
+}
