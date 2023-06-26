@@ -1,0 +1,19 @@
+package pratice;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class arms {
+	public static void main(String[]args) {
+			System.setProperty("webdriver.chrome.driver","C:\\chromedriver_win32\\chromedriver.exe");
+			WebDriver driver=new ChromeDriver();
+			driver.get("https://arms.sse.saveetha.com/Login.aspx");	
+			WebElement username=driver.findElement(By.id("txtusername"));
+			username.sendKeys("192110177");
+			WebElement password=driver.findElement(By.id("txtpassword"));
+			password.sendKeys("pravinraj");
+			WebElement login=driver.findElement(By.id("btnlogin "));
+			login.click();
+		}
+	}
+	
+
+
